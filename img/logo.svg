@@ -1,0 +1,9 @@
+
+<svg viewBox="0 0 98 24" height="20" xmlns="http://www.w3.org/2000/svg">
+  <!-- Musical note -->
+  <circle cx="0" cy="16" r="0" fill="black"/>
+  <path d="M12 2v14a4 4 0 1 0 2 0V6h6V2h-8z" fill="black"/>
+  
+  <!-- Text 'moseeqi' -->
+  <text x="22" y="18" font-family="Arial, sans-serif" font-size="16" fill="black">moseeqi</text>
+</svg>

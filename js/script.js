@@ -76,7 +76,8 @@ const playMusic = (track, pause = false) => {
 
 async function displayalbums() {
     // let a = await fetch(`/songs/`)
-    let a = await fetch(`http://192.168.1.108:3000/${songs}/`);
+    let a = await fetch(`http://192.168.1.108:3000/songs/`);
+    // let a = await fetch(`http://192.168.1.108:3000/${songs}/`);
 
     // let a = await fetch(`http://192.168.1.108:3000/songs/`)
     // let a = await fetch(`http://192.168.1.107:3000/songs/`)
@@ -218,7 +219,7 @@ async function main() {
 
     //add an event listener to volume
     document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", (e) => {
-        console.log("Setting volume to", e, e.targwt, e.target.value, "/100")
+        console.log("Setting volume to", e, e.target, e.target.value, "/100")
         currentsong.volume = parseInt(e.target.value) / 100
         if (currentsong.volume >0){
             document.querySelector(".volume>img").src = document.querySelector(".volume>img").src.replace("mute.svg", "volume.svg")
